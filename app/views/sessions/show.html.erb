@@ -1,0 +1,8 @@
+<h1><%= @session.title %></h1>
+<hr>
+<h3>Commands</h3>
+<ol>
+  <% @session.commands.each do |cmd| %>
+     <li><pre><code><%= cmd.name %></code></pre></li>
+  <% end %>
+</ol>

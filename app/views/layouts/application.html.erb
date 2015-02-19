@@ -7,8 +7,23 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <div class='content'>
+    <header>
+        <h1>HisTerm</h1>
+    </header>
+    <div class='container'>
+     <div class='row'>
+       <div class='col-md-12'>
 
-<%= yield %>
-
+          <main role='main'>
+            <%= yield %>
+          </main>
+        </div>
+      </div>
+    </div>
+    <footer>
+      Made by <a href='http://justinherrick.com/'>Justin Herrick</a> for <a href='http://theironyard.com'>The Iron Yard</a>
+    </footer>
+  </div>
 </body>
 </html>
