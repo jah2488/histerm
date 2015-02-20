@@ -2,6 +2,10 @@ require 'securerandom'
 class Session < ActiveRecord::Base
   has_many :commands
 
+  def to_param
+    slug
+  end
+
   def self.build!(opts = {})
     build(opts).save!
   end

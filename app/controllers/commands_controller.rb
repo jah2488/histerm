@@ -1,6 +1,10 @@
 class CommandsController < ApplicationController
   before_action :find_session
 
+  def index
+    render json: @session.commands.to_json
+  end
+
   def new
     @command = Command.new(session_id: @session.slug)
   end

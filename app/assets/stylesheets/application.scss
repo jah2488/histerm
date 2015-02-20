@@ -1,5 +1,7 @@
     @import 'bootstrap-sprockets';
     @import 'bootstrap';
+    @import 'commands';
+    @import 'sessions';
 
     header {
       height: 4.4em;
